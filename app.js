@@ -25,7 +25,7 @@ var contactRouter = require('./routes/contact');
 
 var app = express();
 //mongoose connection
-mongoose.connect('mongodb+srv://heavenlyminded:heavenlyminded@heavenlyminded.zinft.mongodb.net/heavenlyminded?retryWrites=true&w=majority')
+mongoose.connect(process.env.mongoDbUrl)
     .then(responds => {
         console.log('Mongodb Connected succesfully');
     })
