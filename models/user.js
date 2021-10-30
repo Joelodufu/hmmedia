@@ -24,6 +24,9 @@ const userSchema = mongoose.Schema({
     department: {
         type: String
     },
+    otherdept: {
+        type: String
+    },
     datOfBirth: {
         type: String,
         required: true

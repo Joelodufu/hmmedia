@@ -97,9 +97,9 @@
                                 <option>Videography</option>
                                 <option>Others</option>
                             </select>
-                            <div class="invalid-feedback">
-                                Please provide a Category.
-                            </div>
+                            <label for="otherdept">Specify Other Departments</label>
+                            <input type="text" name="otherdept" class="form-control" id="otherdept" placeholder="Enter Other Department" >
+                            
                         </div>
                         <div class="col-md-3 mb-3">
                             <label for="zip">Zip</label>
@@ -124,6 +124,7 @@
                         </div>
                     </div>
                     <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                    <span> <b> Account details:</b>  <span style="color: red;">1016868143</span> Heavenly minded media. Zenith Bank</span><br>
                     <button type="submit" class="btn btn-primary btn-block">Register</button>
                 </form>
                 <div class="text-center">
